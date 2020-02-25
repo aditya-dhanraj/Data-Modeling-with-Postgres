@@ -1,0 +1,44 @@
+Fact Table :
+songplay_id - serial PRIMARY KEY
+start_time  - date
+user_id     - int
+level       - varchar
+song_id     - varchar
+artist_id   - varchar
+session_id  - int
+location    - varchar
+user_agent  - text
+
+Dimesion Tables :
+1) users :
+user_id     - int
+first_name  - varchar
+last_name   - varchar
+gender      - char(1)
+level       - varchar
+
+2) songs :
+song_id     - varchar
+title       - varchar
+artist_id   - varchar
+year        - smallint
+duration    - float(5)
+
+3) artists :   
+artist_id   - varchar
+name        - text
+location    - varchar
+latitude    - float(6)
+longitude   - float(6)
+
+4) time :      
+start_time  - date
+hour        - int
+day         - int
+week        - int
+month       - int
+year        - int
+weekday     - text
+
+
+The COALESCE() function returns the first non-null value in a list.
