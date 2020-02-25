@@ -31,15 +31,20 @@ After Creation parse the logs files:
 The schema used for this exercise is the Star Schema: " One Fact Table surround by 4 Dimension Table "
 
 [Database Schema!](img/StarSchema.PNG "Star Schema")
+![](images/Schema.png)
 
 ## The project file structure
 
 We have a small list of files, easy to maintain and understand the Concept:
 
 **sql_queries.py**   -  Contains all your sql queries to use throughout the ETL process 
+
 **create_tables.py** -  File reponsible to create the schema structure into the PostgreSQL database
+
 **etl.py**           -  Reads and processes files from song_data and log_data and load them into the tables.
+
 **etl.ipynb**        -  The python notebook that was written to develop the logic behind the etl.py process.
+
 **test.ipynb**       -  Displays the first few rows of each table, to certify if our ETL process was being successful (or not).
 
 ## Author
