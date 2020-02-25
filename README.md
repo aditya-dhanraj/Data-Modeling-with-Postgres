@@ -30,7 +30,7 @@ After Creation parse the logs files:
 
 The schema used for this exercise is the Star Schema: " One Fact Table surround by 4 Dimension Table "
 
-<img src="images/Schema.png" width=100>
+<img src="images/Schema.png">
 
 ## The project file structure
 
